@@ -25,8 +25,8 @@ jobs:
         uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
         with:
           upstream_sync_repo: wukongdaily/AutoBuildImmortalWrt          # 此处修改为上游仓库
-          upstream_sync_branch: main                     # 上游仓库分支
-          target_sync_branch: main                           # 你的fork仓库分支
+          upstream_sync_branch: master                     # 上游仓库分支
+          target_sync_branch: master                          # 你的fork仓库分支
           target_repo_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Sync check
